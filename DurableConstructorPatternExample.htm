@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Durable Constructor Pattern Example</title>
+    <script type="text/javascript">
+                    
+        function Person(name, age, job){
+            var o = new Object();
+            o.sayName = function(){
+                alert(name);
+            };    
+            return o;
+        }
+        
+        var person = Person("Nicholas", 29, "Software Engineer");
+        person.sayName();  //"Nicholas"
+
+
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>
